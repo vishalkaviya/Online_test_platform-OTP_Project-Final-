@@ -1,0 +1,256 @@
+/* Global container */
+.view-container {
+  padding: 40px;
+  background-color: #f2eaff; /* light lavender background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main profile card */
+.card {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 32px 24px;
+  display: flex;
+  gap: 24px;
+  max-width: 900px; /* ✅ Reduced from 1200px */
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(136, 84, 208, 0.1);
+}
+
+
+/* Left section */
+.left-section {
+  width: 35%; /* or even 38% */
+  text-align: center;
+}
+
+
+.profile-pic-wrapper {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #e0d3f7;
+  box-shadow: 0 4px 12px rgba(128, 0, 255, 0.15);
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 12px 0 4px;
+  color: #5a189a;
+}
+
+.role {
+  color: #9f44d3;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 14px;
+  color: #6a4c93;
+  margin: 16px 0;
+}
+
+/* Personal info box */
+.info-box {
+  background-color: #e9dcf9;
+  padding: 16px;
+  margin-top: 20px;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #4a266a;
+  text-align: left;
+  box-shadow: 0 2px 10px rgba(138, 43, 226, 0.08);
+}
+
+.info-box p {
+  margin: 6px 0;
+}
+
+/* Tags */
+.tags {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.tag {
+  background-color: #c084fc;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(128, 0, 255, 0.2);
+}
+
+/* Right section */
+.right-section {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Reusable box */
+.box {
+  background-color: #faf8ff;
+  padding: 20px 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(128, 0, 255, 0.05);
+}
+
+.box h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #5a189a;
+}
+
+/* Grid rows */
+.row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.row .box {
+  flex: 1 1 45%;
+}
+
+/* Bar styles */
+.bar-chart li,
+.bar-fill li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.bar {
+  flex: 1;
+  height: 8px;
+  background-color: #e0c3fc;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.bar > div {
+  height: 100%;
+  background-color: #7e22ce;
+  border-radius: 6px;
+  transition: width 0.4s ease;
+}
+
+/* Bullet lists */
+.list {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #4b2354;
+}
+
+.list.red li {
+  color: #ba1d75;
+}
+
+/* Brands section */
+.brands {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.brand {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4a266a;
+  text-transform: uppercase;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Enhanced Info Items */
+.info-enhanced {
+  background: #f5ebff;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #5e478c;
+}
+
+.info-icon {
+  color: #9f44d3;
+}
+.center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* New side image style */
+.view-side-image {
+  width: 250px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Back to home button */
+.back-home-btn {
+  background-color: #7e22ce;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-home-btn:hover {
+  background-color: #5a189a;
+}
+.image-card {
+  background-color: #faf8ff;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(128, 0, 255, 0.05);
+}
+
+.right-side-img {
+  width: 100%;
+  max-width: 400px;  /* increased from 280px or 350px */
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(128, 0, 255, 0.15);
+}

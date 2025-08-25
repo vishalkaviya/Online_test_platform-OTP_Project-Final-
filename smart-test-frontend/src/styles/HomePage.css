@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Rajdhani:wght@600&display=swap');
+
+/* Base Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Layout */
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #e3d4ff, #f3e9ff);
+  color: #333;
+}
+
+/* ===========================
+      HEADER
+=========================== */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #6a0dad;
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1000;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.site-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 1px 1px 2px #c8a2ff;
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  z-index: 1001;
+  position: relative;
+}
+
+.auth-btn {
+  background-color: white;
+  color: #6a0dad;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.auth-btn:hover {
+  background-color: #ddd;
+}
+
+.logout {
+  background-color: white;
+  color: #6a0dad;
+}
+
+.nav-profile {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 2px solid white;
+}
+
+/* ===========================
+      SIDEBAR
+=========================== */
+.sidebar {
+  width: 250px;
+  background-color: #7b2cbf;
+  color: white;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: -250px;
+  transition: all 0.3s ease;
+  padding-top: 80px;
+  z-index: 10;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  padding: 15px 25px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.sidebar nav ul li:hover {
+  background-color: #5e1e9c;
+}
+
+.sidebar .icon {
+  margin-right: 12px;
+}
+.active-link {
+  background-color: rgba(255, 255, 255, 0.2); /* or a different color */
+  font-weight: bold;
+  border-left: 4px solid #ffffff;
+  padding-left: 0.5rem;
+}
+
+/* ## blink effect */
+
+.sidebar-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar-item:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar-item.active {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+.blink {
+  animation: blinkEffect 0.2s;
+}
+
+@keyframes blinkEffect {
+  0% { background-color: #ffecb3; }
+  100% { background-color: #ddd; }
+}
+
+
+/* ===========================
+      HERO SECTION
+=========================== */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  margin: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #4b0082;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #5a5a5a;
+  margin-top: 10px;
+}
+
+/* ===========================
+      FEATURES SECTION
+=========================== */
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.feature-box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #6a0dad;
+  margin-bottom: 10px;
+}
+
+.feature-box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.feature-box p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* ===========================
+      WHY CHOOSE SECTION
+=========================== */
+.why-choose {
+  background-color: #eaf0ff;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.why-choose h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #6a0dad;
+}
+
+.why-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.why-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.8s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.why-card h4 {
+  color: #6a0dad;
+  margin-bottom: 0.5rem;
+}
+
+/* ===========================
+      GET STARTED SECTION
+=========================== */
+.get-started-section {
+  text-align: center;
+  margin: 3rem 0 5rem 0;
+}
+
+.get-started-btn {
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  background: linear-gradient(135deg, #6a0dad, #b565f7);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.get-started-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(106, 13, 173, 0.4);
+}
+
+/* ===========================
+      FOOTER
+=========================== */
+
+.site-footer {
+  background-color: #6a0dad; /* Same as header */
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* ===========================
+      ANIMATIONS
+=========================== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===========================
+      RESPONSIVE
+=========================== */
+@media screen and (max-width: 768px) {
+  .features,
+  .why-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-box,
+  .why-card {
+    width: 90%;
+  }
+}

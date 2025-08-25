@@ -1,0 +1,108 @@
+/* src/styles/EditQuestion.css */
+
+.edit-question-container {
+  background: linear-gradient(to top right, #f3e8ff, #ede9fe, #fdf4ff);
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.edit-question-form {
+  background: white;
+  max-width: 700px;
+  width: 100%;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.edit-question-form h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #7e22ce;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.edit-question-form select,
+.edit-question-form textarea,
+.edit-question-form input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.edit-question-form select:focus,
+.edit-question-form textarea:focus,
+.edit-question-form input[type="text"]:focus {
+  border-color: #a855f7;
+  box-shadow: 0 0 0 2px #e9d5ff;
+}
+
+.option-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.option-group input[type="text"] {
+  flex: 1;
+}
+
+.option-group select {
+  width: 130px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.edit-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.save-btn {
+  background-color: #a855f7;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+}
+
+.save-btn:hover {
+  background-color: #7e22ce;
+}
+
+.back-home-btn {
+  background-color: #7c3aed; /* deep purple */
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+}
+
+.back-home-btn:hover {
+  background-color: #5b21b6;
+  transform: scale(1.05);
+}

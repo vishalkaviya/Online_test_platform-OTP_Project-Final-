@@ -1,0 +1,132 @@
+/* src/styles/AddQuestionPage.css */
+
+.add-question-page {
+  background: linear-gradient(to top right, #f3e8ff, #ede9fe, #fdf4ff); /* soft purple */
+  min-height: 100vh;
+  padding: 24px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.add-question-container {
+  background-color: white;
+  max-width: 700px;
+  margin: auto;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  color: #7e22ce; /* deep plum */
+  margin-bottom: 24px;
+}
+
+.header .icon {
+  font-size: 28px;
+  margin-right: 12px;
+}
+
+.header h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #4b5563;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #a855f7;
+  box-shadow: 0 0 0 2px #e9d5ff;
+}
+
+.option-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.option-group input[type="radio"] {
+  margin-right: 12px;
+  accent-color: #a855f7;
+}
+
+.option-group input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.submit-container {
+  text-align: center;
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.submit-container button {
+  background-color: #a855f7;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.4);
+}
+
+.submit-container button:hover {
+  background-color: #7e22ce;
+}
+
+.secondary-button {
+  background-color: #ede9fe;
+  color: #7e22ce;
+  border: 2px solid #a855f7;
+}
+
+.secondary-button:hover {
+  background-color: #e0d7f8;
+}
+
+.btn-icon {
+  font-size: 16px;
+}

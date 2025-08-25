@@ -1,0 +1,116 @@
+.result-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #6ee7b7, #60a5fa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.result-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.result-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #10b981;
+  margin-bottom: 0.5rem;
+}
+
+.result-subtext {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.result-progress {
+  margin: 0 auto 2rem;
+  width: 160px;
+  height: 160px;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.stat-box {
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.stat-box.green {
+  background: #d1fae5;
+  color: #10b981;
+}
+
+.stat-box.blue {
+  background: #dbeafe;
+  color: #3b82f6;
+}
+
+.stat-box.red {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+.stat-box.purple {
+  background: #ede9fe;
+  color: #8b5cf6;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 13px;
+  margin-top: 0.25rem;
+}
+
+.result-msg {
+  margin-bottom: 1.5rem;
+}
+
+.status-icon {
+  font-size: 26px;
+  margin-bottom: 0.5rem;
+}
+
+.status-icon.pass {
+  color: #10b981;
+}
+
+.status-icon.fail {
+  color: #ef4444;
+}
+
+.back-btn {
+  background: linear-gradient(to right, #22c55e, #3b82f6);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 9999px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #16a34a, #2563eb);
+}

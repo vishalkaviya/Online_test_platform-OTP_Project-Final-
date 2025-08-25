@@ -1,0 +1,97 @@
+/* Full page container */
+.subject-page-main {
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e3d4ff, #f3e9ff, #f3e9ff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+/* Header */
+.subject-page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color:rgb(211, 70, 211);
+}
+
+.subject-page-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #b823d9;
+
+}
+
+.subject-page-subtitle {
+  font-size: 1rem;
+  color: #8e53ed;
+}
+
+/* Grid layout */
+.subject-page-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+/* Modern card style */
+.subject-card-modern {
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  color: #4c1d95;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.subject-card-modern:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon circle */
+.subject-card-icon {
+  background: linear-gradient(to right, #8b5cf6, #7c3aed);
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Card title */
+.subject-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+/* Card description */
+.subject-card-description {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  color: #6b21a8;
+}
+
+/* Test button */
+.subject-card-button {
+  background: linear-gradient(to right, #8f76da, #713ced);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-size: 0.875rem;
+  border-radius: 9999px;
+  transition: background 0.3s ease;
+}
+
+.subject-card-button:hover {
+  background: linear-gradient(to right, #7c3aed, #6d28d9);
+}
+
+

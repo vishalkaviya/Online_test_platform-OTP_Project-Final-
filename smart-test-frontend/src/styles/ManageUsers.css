@@ -1,0 +1,124 @@
+.manage-users-container {
+  padding: 20px;
+}
+
+.user-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #f2f2f2;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  padding: 6px;
+  outline: none;
+  width: 200px;
+}
+
+.search-icon {
+  margin-right: 6px;
+  color: #666;
+}
+
+.gender-filter {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.user-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.user-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s ease;
+}
+.user-card:hover {
+  transform: translateY(-5px);
+}
+
+.user-card img,
+.user-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.user-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.user-info p {
+  margin: 4px 0;
+  color: #555;
+}
+.user-status {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.user-status.active {
+  background-color: #e0f7ea;
+  color: #2e7d32;
+}
+
+.user-status.inactive {
+  background-color: #fdecea;
+  color: #c62828;
+}
+.user-info .user-last-login {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 4px;
+}
+/* Enhanced dropdown styles */
+.gender-filter {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: border 0.3s, box-shadow 0.3s;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='12' height='12' viewBox='0 0 20 20' fill='gray' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 7L10 12L15 7H5Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 14px;
+  min-width: 150px;
+}
+
+.gender-filter:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
