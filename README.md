@@ -4,7 +4,6 @@ The Online Test Platform is a comprehensive, adaptive testing system built using
 It provides students with subject-based adaptive tests and equips administrators with powerful management and analytics tools.
 
 🚀 Features
-
 🔹 User Module
 
 Authentication: Register, Login, Logout, and Password Reset (JWT-based).
@@ -94,7 +93,6 @@ Authentication: JWT (JSON Web Token)
 Visualization: Chart.js / Recharts
 
 💻 System Requirements
-
 🔹 Hardware
 
 Processor: Intel Core i3 or higher
@@ -122,28 +120,26 @@ Browser: Chrome / Firefox (latest versions)
 Other Tools: VS Code, Postman, Git
 
 ⚙️ Installation & Setup
-
 1️⃣ Clone the Repository
-
 git clone https://github.com/your-username/online-test-platform.git
 cd online-test-platform
 
 2️⃣ Backend Setup (Django + DRF)
-
 cd backend
 python -m venv venv
-source venv/bin/activate # On Windows: venv\Scripts\activate
+source venv/bin/activate   # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 
+
 Backend runs at: http://127.0.0.1:8000/
 
 3️⃣ Frontend Setup (React)
-
 cd frontend
 npm install
 npm start
+
 
 Frontend runs at: http://localhost:3000/
 
